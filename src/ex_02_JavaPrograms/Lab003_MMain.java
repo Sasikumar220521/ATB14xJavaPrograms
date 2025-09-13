@@ -1,4 +1,4 @@
-package ex_02_JavaProgram;
+package ex_02_JavaPrograms;
 
 public class Lab003_MMain {
     public static void main(String[] args) {
