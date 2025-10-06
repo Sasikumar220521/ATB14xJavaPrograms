@@ -19,6 +19,10 @@ public class Lab0014_Varibales {
         System.out.println(_v*1);
         System.out.println($+1);
         int _2 = 100;
+        Long un = 100__100_0L;
+//        int my-var = 10; //not valid
+//        int 123var = 10; //not valid
+//        int my var = 10; //not valid
         System.out.println(_2);
 
 
