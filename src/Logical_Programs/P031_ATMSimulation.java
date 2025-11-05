@@ -19,18 +19,30 @@ public class P031_ATMSimulation {
     }
 
     static void atmSimulation(){
-        int balance = 10000;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter withdrawal amount in multiples of 100: ");
-        if(scanner.hasNextInt()){
-            int entered_amt = scanner.nextInt();
-            if(entered_amt >0 && entered_amt%100 == 0 && entered_amt<balance){
-                balance = balance - entered_amt;
-                System.out.println("Withdrawal successful! Balance available is "+ balance);
-            }else
-                System.out.println("Withdrawal failed");
+        while(true){
+            double balance = 10000;
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter withdrawal amount in multiples of 100: ");
+            if(scanner.hasNextDouble()){
+                double entered_amt = scanner.nextDouble();
+                if (entered_amt > 0){
+                    if(entered_amt%100 == 0){
+                        if(entered_amt<=balance){
+                            balance = balance - entered_amt;
+                            System.out.println("Withdrawal successful! Balance available is "+ balance);
+                            break;
+                        }
+                        else
+                            System.out.println("Withdrawal failed! Balance is less than entered amount");
+                    }else
+                        System.out.println("Withdrawal failed! Enter amount in multiples of 100");
+                }else
+                    System.out.println("Withdrawal failed! Enter amount greater than 0");
 
-        }else
-            System.out.println("Enter proper amount");
+            }else
+                System.out.println("Enter proper amount in numbers");
+
+        }
+
     }
 }
