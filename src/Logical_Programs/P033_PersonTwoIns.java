@@ -9,8 +9,8 @@ public class P033_PersonTwoIns {
     }
 
     public static void main(String[] args) {
-        P033_PersonTwoIns john = new P033_PersonTwoIns("John", 25);
-        P033_PersonTwoIns alice = new P033_PersonTwoIns("Alice", 30);
-        System.out.println("Name: " + john.name + ", Age: " + john.age + ", Name: " + alice.name + ", Age: " +alice.age);
+        P033_PersonTwoIns sasiobj = new P033_PersonTwoIns("Sasi", 25);
+        P033_PersonTwoIns kumarobj = new P033_PersonTwoIns("Kumar", 30);
+        System.out.println("Name: " + sasiobj.name + ", Age: " + sasiobj.age + ", Name: " + kumarobj.name + ", Age: " +kumarobj.age);
     }
 }
